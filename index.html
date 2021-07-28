@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            background-color: rgb(21, 25, 40);
+            background-image: url("https://mytrade.org/static/media/bg.9052713b.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Inter var', sans-serif;
+            max-height: 100%;
+            overflow: hidden;
+
+        }
+
+        header {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 15px 25px;
+            height: 30px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.144);
+        }
+
+        #logo {
+            position: absolute;
+            left: 31px;
+            top: 16px;
+            transition: 0.3s;
+            z-index: 10000;
+
+
+        }
+
+        #logo:hover {
+            cursor: pointer;
+            transform: rotate(-5deg);
+        }
+
+        #content {
+            position: absolute;
+            padding: 18% 20%;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 80px;
+            color: white;
+        }
+
+        #colorFade {
+            width: max-content;
+            font-size: 100px;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(to right, rgb(0, 64, 255), rgb(231, 73, 45));
+            -webkit-background-clip: text;
+
+        }
+
+        #line {
+            width: 100px;
+            height: 4px;
+            background-image: linear-gradient(90deg, rgb(0, 64, 255), rgba(0, 64, 255, 0));
+            margin: 2% 0px;
+
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+            color: rgb(127, 136, 185);
+        }
+
+        button {
+            color: white;
+            font-size: 1rem;
+            border: none;
+            margin: 4% 30px 0px 0px;
+            width: 160px;
+            height: 50px;
+            line-height: 50px;
+            background: rgba(0, 64, 255);
+            border-radius: 30px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        button:hover {
+            cursor: pointer;
+            filter: brightness(125%);
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            body {
+                background-color: rgb(21, 25, 40);
+                background-image: url("https://mytrade.org/static/media/bg.9052713b.png");
+                background-repeat: no-repeat;
+                background-size: 100vh;
+                background-position: top;
+                font-family: 'Inter var', sans-serif;
+                max-height: 100%;
+                overflow: hidden;
+
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            #colorFade {
+                font-size: 45px;
+            }
+
+            h4 {
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-size: 18px;
+                font-weight: 500;
+                color: rgb(127, 136, 185);
+            }
+
+            #content {
+                position: absolute;
+                top: 25%;
+                max-width: 100%;
+                padding: 10% 10%;
+
+            }
+
+            button {
+                color: white;
+                font-size: 0.8rem;
+                border: none;
+                margin: 6% 20px 0px 0px;
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                background: rgba(0, 64, 255);
+                border-radius: 30px;
+                text-align: center;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+<header>
+    <img id="logo" width="120px" src="https://mytrade.org/static/media/alpha-logo.68b5f62e.png" alt="logo">
+</header>
+
+<body>
+
+
+    <div id="content">
+        <h1 id="colorFade">Cross-Chain</h1>
+        <h1>Decentralized Exchange</h1>
+        <div id="line"></div>
+        <h4>Best price for takers, highest capital efficiency for makers.</h4>
+        <a href="https://heco.mytrade.org/"><button>HECO Network</button></a>
+        <a href="https://hpb.mytrade.org/"><button>HPB Network</button></a>
+    </div>
+
+</body>
+
+</html>
